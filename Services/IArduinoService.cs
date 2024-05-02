@@ -4,8 +4,8 @@ namespace Arduino.Services
 {
     public interface IArduinoService
     {
-        string SendSeveral(List<Ardcommand> ardcommands);
-        string Send(Ardcommand ardcommand);
-        string OnThenOff(Ardcommand ardcommand);
+        string SendSeveral(List<Ardcommand> ardcommands, bool useCOM3);
+        string Send(Ardcommand ardcommand, bool useCOM3);
+        string OnThenOff(Ardcommand ardcommand, bool useCOM3);
     }
 }
